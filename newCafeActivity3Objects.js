@@ -33,22 +33,22 @@ let coffeeShop = {
       let indexOfItem = this.drinks.indexOf(order1[o]);
 
       if (indexOfItem != -1) {
-        console.log(order1[o], `£${this.drinks[indexOfItem + 1].toFixed(2)}`);
+        console.log(order1[o], `: £${this.drinks[indexOfItem + 1].toFixed(2)}`);
         this.total1 += this.drinks[indexOfItem + 1];
-      } else console.log(`${order1[o]} is not on menu`);
+      } else console.log(`-----${order1[o]} not on menu`);
     }
-    console.log(`drink total: £${this.total1.toFixed(2)}`);
+    console.log(`Drink total: £${this.total1.toFixed(2)}`);
   },
   foodOrdered(order2) {
     for (let i = 0; i < order2.length; i++) {
       let indexOfItem = this.food.indexOf(order2[i]);
 
       if (indexOfItem != -1) {
-        console.log(order2[i], `£${this.food[indexOfItem + 1].toFixed(2)}`);
+        console.log(order2[i], `: £${this.food[indexOfItem + 1].toFixed(2)}`);
         this.total2 += this.food[indexOfItem + 1];
-      } else console.log(`${order2[i]} is not on the menu`);
+      } else console.log(`-----${order2[i]} not on menu`);
     }
-    console.log(`£${this.total2}`);
+    console.log(`Food total: £${this.total2}`);
     let total = this.total1 + this.total2;
     console.log(`Final Total is: £${total}`);
   },
