@@ -9,16 +9,14 @@
 
 // console.log(grid)
 
-
-
-console.log("    |     |    ")
-console.log("    |     |    ")
-console.log("    |     |    ")
-console.log("---------------")
-console.log("    |     |    ")
-console.log("    |     |    ")
-console.log("    |     |    ")
-console.log("---------------")
-console.log("    |     |    ")
-console.log("    |     |    ")
-console.log("    |     |    ")
+console.log("    |     |    ");
+console.log("    |     |    ");
+console.log("    |     |    ");
+console.log("---------------");
+console.log("    |     |    ");
+console.log("    |     |    ");
+console.log("    |     |    ");
+console.log("---------------");
+console.log("    |     |    ");
+console.log("    |     |    ");
+console.log("    |     |    ");

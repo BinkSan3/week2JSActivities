@@ -79,3 +79,84 @@ const reverseNumber = numPalindromeCheck
 const isPalindrome = numPalindromeCheck == reverseNumber;
 
 console.log(isPalindrome);
+
+// ACTIVITY 6
+
+let time = 25;
+let placeOfWork = "work";
+let townOfHome = "home";
+
+if (time >= 8 && time <= 9) {
+  console.log(`If the time is ${time.toFixed(2)}. I am commuting.`);
+} else if (time > 9 && time <= 17.0) {
+  console.log(`If the time is ${time.toFixed(2)}. I am at ${placeOfWork}`);
+} else if (time < 24) {
+  console.log(`If the time is ${time.toFixed(2)}. I am at ${townOfHome}`);
+} else {
+  console.log("This isnt a valid time");
+}
+
+// the problem with this is that this represents as a 24hr clock but will accept invalid times such as 22.70 which realistically is 23.10
+
+//ACTIVITY 7
+
+let randomWord =
+  "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi";
+
+let lastVowel;
+if (/[aeiou]/.test(randomWord)) {
+  lastVowel = randomWord.split("").reverse().join("").lastIndexOf("a");
+} else {
+  lastVowel = null;
+}
+console.log(lastVowel);
+
+console.log(randomWord.charAt(69));
+//the above can test the answer
+
+//ACTIVITY 8
+
+let word = "mariam";
+word = "stevie";
+
+if (word.charAt(0) === word.split("").reverse().join("").charAt(0)) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+// let word = "mariam";
+
+// let endLetter = word.split("").reverse().join("").charAt(0)
+
+// let check = word.charAt(0) == endLetter
+
+// console.log(check)
+
+//ACTIVITY 9
+
+let num1 = 3;
+let num2 = 4;
+let sum = num1 + num2;
+
+if (sum % 2 === 0) {
+  console.log(sum);
+} else {
+  console.log(num1 * num2);
+}
+
+//or
+
+const addUp = () => {
+  return num1 + num2;
+};
+
+const oddOrEven = () => {
+  if (addUp % 2 === 0) {
+    return addUp;
+  } else {
+    return num1 * num2;
+  }
+};
+
+console.log(oddOrEven());

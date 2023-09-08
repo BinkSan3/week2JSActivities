@@ -104,8 +104,143 @@ console.log(`random number between 1 and 50 is ${generate}`);
 
 let zeroToNine = [];
 
-for (let n = 9; n >= 0; n - 1) {
+for (let n = 9; n > 0; n--) {
   zeroToNine.push(n);
 }
 
 console.log(zeroToNine);
+//This now work but only with -- and not -1
+
+//ACTIVITY 4
+
+let films = [
+  "Dirty Dancing",
+  "Shawshank Redemption",
+  "Ghostbusters",
+  "The Borrowers",
+];
+
+// films.splice(2, 1, "Killer");
+//Just to test it
+
+for (let g = 0; g < films.length; g++) {
+  console.log(films[g]);
+}
+
+if (films[2] == "Ghostbusters") {
+  console.log("Yay its Ghostbusters!");
+} else {
+  console.log("Boo we want Ghostbusters!");
+}
+
+//ACTIVITY 5
+
+for (z = 0; z < 6; z++) {
+  let store = Math.round(Math.random() * 30);
+  if (store % 7 === 0) {
+    console.log(`${store} is divisble by 7`);
+  } else {
+    console.log(`${store} is not`);
+  }
+}
+
+//ACTIVITY 6
+
+let bobsFollowers = ["Jaq", "Fynn", "Monse", "Ruby"];
+
+let hannahsFollowers = ["Jamal", "Monse", "Dwayne", "Ruby"];
+
+for (let b = 0; b < bobsFollowers.length; b++) {
+  for (let h = 0; h < hannahsFollowers.length; h++) {
+    if (bobsFollowers[b] === hannahsFollowers[h]) {
+      console.log(hannahsFollowers[h]);
+    }
+  }
+}
+
+//ACTIVITY 7
+
+//for loop
+
+let testNumber = [];
+
+for (let t = 0; t < 20; t++) {
+  if (t % 5 === 0) {
+    console.log(t);
+  }
+}
+
+// while loop
+
+let userList = [
+  "Lorem",
+  "ipsum",
+  "dolor",
+  "sit",
+  "amet",
+  "consectetur",
+  "adipiscing",
+  "elit",
+  "Fusce",
+  "vel",
+  "pellentesque",
+  "justo",
+  "Sed",
+  "imperdiet",
+  "enim",
+  "non",
+  "sodales",
+  "mollis",
+  "In",
+  "eu",
+  "nisi",
+  "facilisis",
+  "libero",
+  "rutrum",
+  "condimentum",
+  "Morbi",
+  "quis",
+  "arcu",
+  "id",
+  "sapien",
+  "ullamcorper",
+  "condimentum",
+  "a",
+  "id",
+  "turpis",
+  "Ut",
+  "cursus",
+  "ultrices",
+  "egestas",
+  "Lorem",
+  "ipsum",
+  "dolor",
+  "sit",
+  "amet",
+  "consectetur",
+  "adipiscing",
+  "elit",
+  "Sed",
+  "non",
+  "bibendum",
+];
+
+let p = 0;
+// while (userList[p] != "Morbi") {
+//   p++;
+//   console.log(userList[p]);
+// }
+
+//do-while
+
+do {
+  console.log(userList[p]);
+  p++;
+} while (userList[p] != "Morbi");
+
+// let test =
+//   " is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various v".split(
+//     "e"
+//   );
+
+// console.log(test);
