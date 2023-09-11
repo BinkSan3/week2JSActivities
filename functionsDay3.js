@@ -111,12 +111,12 @@ let balance = 40.05;
 
 const displayBalance = (pin, amount) => {
   if (pin === pinNumber) {
-    console.log(`Your balance is: ${balance}`);
+    console.log(`Your balance is: £${balance}`);
     if (amount <= balance) {
       console.log(
         "Request to withdraw £" +
           amount +
-          " accepted. Your new Balance is:" +
+          " accepted. Your new Balance is: £" +
           (balance - amount).toFixed(2)
       );
     } else {
